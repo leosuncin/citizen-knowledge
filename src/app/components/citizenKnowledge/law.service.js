@@ -9,6 +9,7 @@
   function LawService($q) {
     var data = [
       {
+        'id': 0,
         'rama_derecho': 'Derecho Administrativo',
         'materia': 'ASAMBLEA LEGISLATIVA',
         'sub_materia': 'Autorizaciones',

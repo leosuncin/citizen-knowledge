@@ -1,1 +1,17 @@
-<h1>Laws view</h1>
+<table class="table table-striped">
+  <caption>Leyes y decretos</caption>
+  <thead>
+    <tr>
+      <th class="col-xs-1">Decreto N°</th>
+      <th class="col-xs-9">Titulo</th>
+      <th class="col-xs-2">Fecha de Emisión</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="decreto in laws.decretos">
+      <td class="col-xs-1"><a ui-sref="law({id: decreto.id})">{{ decreto.decreto }}</a></td>
+      <td class="col-xs-9"><a ui-sref="law({id: decreto.id})">{{ decreto.titulo }}</a></td>
+      <td class="col-xs-2">{{ decreto.fecha_emision | date }}</td>
+    </tr>
+  </tbody>
+</table>
