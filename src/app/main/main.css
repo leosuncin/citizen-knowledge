@@ -1,0 +1,19 @@
+.slide-caption {
+  overflow: hidden;
+  position: relative;
+  margin-top: -87px;
+  padding: 10px 24px 24px;
+  background-color: rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  height: 86px;
+  max-width: 1280px;
+  text-overflow: ellipsis;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.slide-caption strong {
+  font-size: 16px;
+}
