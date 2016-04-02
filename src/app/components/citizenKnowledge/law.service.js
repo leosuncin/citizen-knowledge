@@ -6,7 +6,7 @@
       .service('LawService', LawService);
 
   /** @ngInject */
-  function LawService() {
+  function LawService($q) {
     var data = [
       {
         'rama_derecho': 'Derecho Administrativo',
@@ -25,11 +25,11 @@
     this.getLaw  = getLaw;
 
     function getLaws() {
-      return data;
+      return $q.resolve(data);
     }
 
     function getLaw(id) {
-      return data[id];
+      return $q.resolve(data[id]);
     }
   }
 

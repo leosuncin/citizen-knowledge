@@ -3,10 +3,10 @@
 
   angular
       .module('citizenKnowledge')
-      .service('LawService', LawService);
+      .service('DeputyService', DeputyService);
 
   /** @ngInject */
-  function LawService() {
+  function DeputyService($q) {
     var data = [
       {
         'nombre_completo': 'Ana Vilma Albanez de Escobar',
@@ -38,15 +38,15 @@
       }
     ];
 
-    this.getLaws = getLaws;
-    this.getLaw  = getLaw;
+    this.getDeputies = getDeputies;
+    this.getDeputy  = getDeputy;
 
-    function getLaws() {
-      return data;
+    function getDeputies() {
+      return $q.resolve(data);
     }
 
-    function getLaw(id) {
-      return data[id];
+    function getDeputy(id) {
+      return $q.resolve(data[id]);
     }
   }
 

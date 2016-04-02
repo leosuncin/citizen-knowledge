@@ -3,17 +3,17 @@
 
   angular
     .module('citizenKnowledge')
-    .controller('RegisterController', RegisterController);
+    .controller('LawShowController', LawShowController);
 
   /** @ngInject */
-  function RegisterController($log) {
+  function LawShowController(decreto, $log) {
     var vm = this;
+    vm.decreto = decreto;
 
     function init() {
-      $log.log('Register controller');
+      $log.log('Law controller');
     }
 
     init();
-
   }
 })();

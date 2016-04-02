@@ -6,8 +6,13 @@
     .controller('LoginController', LoginController);
 
   /** @ngInject */
-  function LoginController() {
+  function LoginController($log) {
     var vm = this;
 
+    function init() {
+      $log.log('Login controller');
+    }
+
+    init();
   }
 })();
