@@ -53,6 +53,34 @@
             });
           }
         }
+      })
+      .state('deputy', {
+        url: '/deputy/:id',
+        templateUrl: 'app/deputy/deputy.show.html',
+        controller: 'DeputyShowController',
+        controllerAs: 'deputy',
+        resolve: {
+          /** @ngInject */
+          diputado: function(DeputyService, $stateParams) {
+            return DeputyService.getDeputy($stateParams.id).then(function(diputado) {
+              return diputado;
+            });
+          }
+        }
+      })
+      .state('deputies', {
+        url: '/deputy',
+        templateUrl: 'app/deputy/deputy.index.html',
+        controller: 'DeputyIndexController',
+        controllerAs: 'deputies',
+        resolve: {
+          /** @ngInject */
+          diputados: function(DeputyService) {
+            return DeputyService.getDeputies().then(function(diputados) {
+              return diputados;
+            });
+          }
+        }
       });
 
     $urlRouterProvider.otherwise('/');
