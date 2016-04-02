@@ -1,1 +1,17 @@
-<h1>Deputies view</h1>
+<table class="table table-striped">
+  <caption>Diputados propietarios y suplentes</caption>
+  <thead>
+    <tr>
+      <th class="col-xs-8">Nombre completo</th>
+      <th class="col-xs-2">departamento</th>
+      <th class="col-xs-2">partido</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="diputado in deputies.diputados">
+      <td class="col-xs-8"><a ui-sref="deputy({id: diputado.id})">{{ diputado.nombre_completo }}</a></td>
+      <td class="col-xs-2"><a ui-sref="deputy({id: diputado.id})">{{ diputado.departamento }}</a></td>
+      <td class="col-xs-2"><a ui-sref="deputy({id: diputado.id})">{{ diputado.partido }}</a></td>
+    </tr>
+  </tbody>
+</table>

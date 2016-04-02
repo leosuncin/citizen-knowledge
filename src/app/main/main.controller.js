@@ -6,36 +6,28 @@
     .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController($timeout, webDevTec, toastr, covers) {
+  function MainController(covers) {
     var vm = this;
 
-    vm.awesomeThings = [];
-    vm.classAnimation = '';
-    vm.creationDate = 1459573699189;
-    vm.showToastr = showToastr;
+    vm.awesomeThings = [{
+      title: 'Leyes',
+      url: 'laws',
+      description: 'Consultar las leyes aprobadas o en proceso',
+      logo: 'leyes.png'
+    },
+    {
+      title: 'Votaciones',
+      url: 'votes',
+      description: 'Distribución de los votos por proyecto de ley',
+      logo: 'group.png'
+    },
+    {
+      title: 'Diputados',
+      description: 'Listado de diputados propietarios y suplentes de la Asamblea Legislativa',
+      url: 'deputies',
+      logo: 'debate.png'
+    }];
 
     vm.covers = covers;
-
-    activate();
-
-    function activate() {
-      getWebDevTec();
-      $timeout(function() {
-        vm.classAnimation = 'rubberBand';
-      }, 4000);
-    }
-
-    function showToastr() {
-      toastr.info('Fork <a href="https://github.com/Swiip/generator-gulp-angular" target="_blank"><b>generator-gulp-angular</b></a>');
-      vm.classAnimation = '';
-    }
-
-    function getWebDevTec() {
-      vm.awesomeThings = webDevTec.getTec();
-
-      angular.forEach(vm.awesomeThings, function(awesomeThing) {
-        awesomeThing.rank = Math.random();
-      });
-    }
   }
 })();

@@ -8,14 +8,11 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
       <ul class="nav navbar-nav">
-        <li class="active"><a ng-href="#">Principal</a></li>
+        <li ng-class="{active: $state.includes('home')}"><a ng-href="#">Principal</a></li>
         <li><a ng-href="#">Acerca de</a></li>
         <li><a ng-href="#">Contáctenos</a></li>
       </ul>
 
-      <ul class="nav navbar-nav navbar-right acme-navbar-text">
-        <li>Application was created {{ vm.relativeDate }}.</li>
-      </ul>
     </div>
   </div>
 </nav>
