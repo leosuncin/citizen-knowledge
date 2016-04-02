@@ -15,3 +15,17 @@ bower install
 
 ## Ejecutar el proyecto
 En la terminal navegar hasta el directorio local del proyecto y ejecutar ``gulp serve`` luego abrir el navegador en [localhost:9000](http://localhost:9000)
+
+## Publicar cambios
+```
+git add <archivos modificados>
+git commit -m '<mensaje descriptivo>'
+git push origin master
+```
+
+### Configurar git
+La primera vez que usen git antes de hacer un *commit* deben configurar su nombre y correo para identificar la autoria de los commit
+```
+git config --global user.name '<Nombre de usuario>'
+git config --global user.email <Correo>
+```
