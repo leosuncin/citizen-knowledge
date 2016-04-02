@@ -12,7 +12,15 @@
         url: '/',
         templateUrl: 'app/main/main.html',
         controller: 'MainController',
-        controllerAs: 'main'
+        controllerAs: 'main',
+        resolve: {
+          /** @ngInject */
+          covers: function(CoverService) {
+            return CoverService.getCovers().then(function(covers) {
+              return covers;
+            });
+          }
+        }
       })
       .state('register', {
         url: '/register',
