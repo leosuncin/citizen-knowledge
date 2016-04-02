@@ -37,6 +37,12 @@
             return LawService.getLaw($stateParams.id).then(function(decreto) {
               return decreto;
             });
+          },
+          /** @ngInject */
+          explicacion: function(ExplainService, $stateParams) {
+            return ExplainService.getExplain($stateParams.id).then(function(explicacion) {
+              return explicacion;
+            });
           }
         }
       })

@@ -1,1 +1,29 @@
-<h1>Law view</h1>
+<div class="row">
+  <h1>Ley</h1>
+  <dl class="dl-horizontal">
+    <dt>Rama del derecho:</dt>
+    <dd>{{ law.decreto.rama_derecho }}</dd>
+    <dt>Materia:</dt>
+    <dd>{{ law.decreto.materia }}</dd>
+    <dt>Sub materia:</dt>
+    <dd>{{ law.decreto.sub_materia }}</dd>
+    <dt>Titulo:</dt>
+    <dd>{{ law.decreto.titulo }}</dd>
+    <dt>Tipo documento:</dt>
+    <dd>{{ law.decreto.tipo_documento }}</dd>
+    <dt>Decreto N°:</dt>
+    <dd>{{ law.decreto.decreto }}</dd>
+    <dt>Fecha de emisión:</dt>
+    <dd>{{ law.decreto.fecha_emision | date }}</dd>
+    <dt>Estado:</dt>
+    <dd>{{ law.decreto.estado }}</dd>
+    <dt>Resumen:</dt>
+    <dd>{{ law.decreto.resumen }}</dd>
+  </dl>
+</div>
+<div class="row">
+  <h2>Explicación</h2>
+  <h3>{{ law.explicacion.titulo }} <small>publicada {{ law.explicacion.fecha_publicacion | date }}</small></h3>
+  <p ng-bind-html="law.explicacion.contenido|nl2br"></p>
+  <p><strong>Explicada por:</strong> {{ law.explicacion.fuente }}</p>
+</div>
