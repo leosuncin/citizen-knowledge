@@ -1,1 +1,29 @@
-<h1>Deputy view</h1>
+<div class="row" style="padding: 0 30px;">
+  <div class="col-xs-3">
+    <img ng-src="{{ deputy.diputado.foto }}" alt="deputy.diputado.nombre_completo">
+  </div>
+  <dl class="dl-horizontal col-xs-9">
+    <dt>Nombre completo:</dt>
+    <dd>{{ deputy.diputado.nombre_completo }}</dd>
+    <dt>Departamento:</dt>
+    <dd>{{ deputy.diputado.departamento }}</dd>
+    <dt>Partido:</dt>
+    <dd>{{ deputy.diputado.partido }}</dd>
+    <dt>Correo:</dt>
+    <dd><a ng-href="mailto:{{ deputy.diputado.correo }}">{{ deputy.diputado.correo }}</a></dd>
+    <dt>Suplente</dt>
+    <dd>{{ deputy.diputado.suplente }}</dd>
+    <dt>Comisiones</dt>
+    <dd>
+        <ul>
+          <li ng-repeat="comision in deputy.diputado.comisiones">{{ comision.nombre }} ({{ comision.cargo }})</li>
+        </ul>
+    </dd>
+    <dt>Trayectoria:</dt>
+    <dd>
+        <ul>
+          <li ng-repeat="puesto in deputy.diputado.trayectoria">{{ puesto.cargo }} <br> {{ puesto.periodo }}</li>
+        </ul>
+    </dd>
+  </dl>
+</div>

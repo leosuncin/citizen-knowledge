@@ -9,11 +9,11 @@
   function DeputyService($q) {
     var data = [
       {
+        'id': 0,
         'nombre_completo': 'Ana Vilma Albanez de Escobar',
         'departamento': '	San Salvador',
         'partido': 'ARENA',
         'correo': 'anav.escobar@asamblea.gob.sv',
-        'tipo_documento': 'Decretos',
         'suplente': 'Patricia María Salazar de Rosales',
         'comisiones': [
           {
@@ -34,7 +34,8 @@
             'cargo': 'Diputada Propietaria a la Asamblea Legislativa por el departamento de San Salvador',
             'periodo': '2012-2015'
           }
-        ]
+        ],
+        foto: 'http://asamblea.gob.sv/pleno/pleno-legislativo/ana-vilma-albanez-de-escobar/diputado_fotografia'
       }
     ];
 

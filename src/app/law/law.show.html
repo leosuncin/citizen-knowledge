@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row" style="padding: 0 30px;">
   <h1>Ley</h1>
   <dl class="dl-horizontal">
     <dt>Rama del derecho:</dt>
@@ -20,8 +20,6 @@
     <dt>Resumen:</dt>
     <dd>{{ law.decreto.resumen }}</dd>
   </dl>
-</div>
-<div class="row">
   <h2>Explicación</h2>
   <h3>{{ law.explicacion.titulo }} <small>publicada {{ law.explicacion.fecha_publicacion | date }}</small></h3>
   <p ng-bind-html="law.explicacion.contenido|nl2br"></p>
