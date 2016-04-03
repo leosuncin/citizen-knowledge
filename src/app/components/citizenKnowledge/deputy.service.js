@@ -11,7 +11,7 @@
       {
         'id': 0,
         'nombre_completo': 'Ana Vilma Albanez de Escobar',
-        'departamento': '	San Salvador',
+        'departamento': 'San Salvador',
         'partido': 'ARENA',
         'correo': 'anav.escobar@asamblea.gob.sv',
         'suplente': 'Patricia María Salazar de Rosales',
@@ -25,7 +25,7 @@
             'cargo': 'Vocal'
           }
         ],
-        'trayectoria': [
+        'trayectoria_politica': [
           {
             'cargo': 'Diputada Propietaria a la Asamblea Legislativa por el departamento de San Salvador',
             'periodo': 'Mayo 2015 - Abril 2018'
@@ -36,6 +36,74 @@
           }
         ],
         foto: 'http://asamblea.gob.sv/pleno/pleno-legislativo/ana-vilma-albanez-de-escobar/diputado_fotografia'
+      },
+      {
+        'id': 1,
+        'nombre_completo': 'José Antonio Almendáriz Rivas',
+        'departamento': 'Sonsonate',
+        'partido': 'PCN',
+        'correo': 'jalmendariz@asamblea.gob.sv',
+        'suplente': 'José Alfredo Mirón Ruiz',
+        'comisiones': [
+          {
+            'nombre': 'Comisión de Seguridad Pública y Combate a la Narcoactividad',
+            'cargo': 'Presidente'
+          }, {
+            'nombre': 'Comisión de Defensa',
+            'cargo': 'Vocal'
+          }, {
+            'nombre': 'Comisión de Legislación y Puntos Constitucionales',
+            'cargo': 'Vocal'
+          }, {
+            'nombre': 'Comisión Financiera',
+            'cargo': 'Vocal'
+          }, {
+            'nombre': 'Comisión Política',
+            'cargo': 'Vocal'
+          }
+        ],
+        'trayectoria_politica': [
+          {
+            'cargo': 'Diputado Propietario a la Asamblea Legislativa por el departamento de Sonsonate',
+            'periodo': 'Mayo 2015 - Abril 2018'
+          }, {
+            'cargo': 'Diputado Propietario por el Departamento de Sonsonate',
+            'periodo': '2012 – 2015',
+            'puesto': 'Presidente de la Comisión de Seguridad Pública.'
+          }, {
+            'cargo': 'Diputado Propietario por el Departamento de Sonsonate',
+            'periodo': '2009 – 2012',
+            'puesto': 'Presidente de la Comisión de Seguridad Pública'
+          }, {
+            'cargo': 'Diputado Propietario por el Departamento de Sonsonate',
+            'periodo': '2006 – 2009',
+            'puesto': 'Secretario de la Junta Directiva'
+          }, {
+            'cargo': 'Diputado Propietario por el Departamento de Sonsonate',
+            'periodo': '2003 – 2006',
+            'puesto': 'Presidente de la Comisión de Seguridad y Tercer Secretario'
+          }, {
+            'cargo': 'Diputado Propietario por el Departamento de Sonsonate',
+            'periodo': '2000 – 2003',
+            'puesto': 'Presidente de la Comisión de Defensa'
+          }, {
+            'cargo': 'Diputado Propietario por el Departamento de Sonsonate',
+            'periodo': '1997 – 2000',
+            'puesto': 'Presidente de la Comisión de Defensa'
+          }
+        ],
+        'trayectoria_academica': [
+          {
+            'carrera': 'Doctorado en Teología',
+            'institucion': 'Latin University of Theology',
+            'egresado': 2010
+          }, {
+            'carrera': 'Egresado de Ciencias Políticas'
+          }, {
+            'carrera': 'Diplomado de Estado Mayor del Ejercito'
+          }
+        ],
+        foto: 'http://asamblea.gob.sv/pleno/pleno-legislativo/jose-antonio-almendariz-rivas/diputado_fotografia'
       }
     ];
 
