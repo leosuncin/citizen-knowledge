@@ -15,6 +15,10 @@
     <dd>{{ law.decreto.decreto }}</dd>
     <dt>Fecha de emisión:</dt>
     <dd>{{ law.decreto.fecha_emision | date }}</dd>
+    <dt ng-if="law.decreto.fecha_publicacion">Fecha de publicación:</dt>
+    <dd ng-if="law.decreto.fecha_publicacion">{{ law.decreto.fecha_publicacion | date }}</dd>
+    <dt ng-if="law.decreto.tomo">Tomo N°:</dt>
+    <dd ng-if="law.decreto.tomo">{{ law.decreto.tomo }}</dd>
     <dt>Estado:</dt>
     <dd>{{ law.decreto.estado }}</dd>
     <dt>Resumen:</dt>
