@@ -1,0 +1,25 @@
+.voto {
+  padding: 10px 5px;
+  border: 2px solid white;
+  border-radius: 7px;
+  font-weight: 800;
+  font-size: 16px;
+}
+.voto > a {
+  color: white;
+}
+.voto img {
+  margin-right: 3px;
+}
+.voto.green {
+  background: #00FF00;
+}
+.voto.red {
+  background: #FF0000;
+}
+.voto.yellow {
+  background: #FFFF00;
+}
+.voto.brown {
+  background: #804000;
+}

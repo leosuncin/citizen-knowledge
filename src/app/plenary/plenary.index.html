@@ -1,0 +1,21 @@
+<table class="table table-striped">
+  <caption>Dictamenes</caption>
+  <thead>
+    <tr>
+      <th class="col-xs-3">Fecha plenaria</th>
+      <th class="col-xs-6">Proyecto de ley</th>
+      <th class="col-xs-1">A favor</th>
+      <th class="col-xs-1">En contra</th>
+      <th class="col-xs-1">Abstenciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="proyecto in plenaries.plenarias">
+      <td class="col-xs-3">{{ proyecto.fecha_plenaria | date }}</td>
+      <td class="col-xs-8"><a ui-sref="plenary({id: proyecto.id})">{{ proyecto.titulo }}</a></td>
+      <td class="col-xs-1">{{ proyecto.a_favor }}</td>
+      <td class="col-xs-1">{{ proyecto.en_contra }}</td>
+      <td class="col-xs-1">{{ proyecto.abstencion }}</td>
+    </tr>
+  </tbody>
+</table>
