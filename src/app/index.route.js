@@ -95,6 +95,34 @@
             });
           }
         }
+      })
+      .state('plenary', {
+        url: '/plenary/:id',
+        templateUrl: 'app/plenary/plenary.show.html',
+        controller: 'PlenaryShowController',
+        controllerAs: 'plenary',
+        resolve: {
+          /** @ngInject */
+          plenaria: function(PlenaryService, $stateParams) {
+            return PlenaryService.getPlenary($stateParams.id).then(function(plenaria) {
+              return plenaria;
+            });
+          }
+        }
+      })
+      .state('plenaries', {
+        url: '/plenary',
+        templateUrl: 'app/plenary/plenary.index.html',
+        controller: 'PlenaryIndexController',
+        controllerAs: 'plenaries',
+        resolve: {
+          /** @ngInject */
+          plenarias: function(PlenaryService) {
+            return PlenaryService.getPlenaries().then(function(plenarias) {
+              return plenarias;
+            });
+          }
+        }
       });
 
     $urlRouterProvider.otherwise('/');

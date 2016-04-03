@@ -1,0 +1,30 @@
+<div class="row" style="padding: 0 30px;">
+  <h1>Dictamen de la sesión plenaria</h1>
+  <div class="col-xs-12 col-md-6">
+    <img ng-src="{{ plenary.plenaria.image }}" alt="{{ plenary.plenaria.titulo }}" style="width: 100%;">
+  </div>
+  <div class="col-xs-12 col-md-6">
+    <dl class="dl-horizontal">
+      <dt>Proyecto de ley:</dt>
+      <dd><a ui-sref="law({id: plenary.plenaria.ley})">{{ plenary.plenaria.titulo }}</a></dd>
+      <dt>Fecha plenaria:</dt>
+      <dd>{{ plenary.plenaria.fecha_plenaria | date }}</dd>
+      <dt>Total de votos:</dt>
+      <dd>{{ plenary.plenaria.total_votos }}</dd>
+      <dt>A favor:</dt>
+      <dd>{{ plenary.plenaria.a_favor }}</dd>
+      <dt>En contra:</dt>
+      <dd>{{ plenary.plenaria.en_contra }}</dd>
+      <dt>Abstención:</dt>
+      <dd>{{ plenary.plenaria.abstencion }}</dd>
+      <dt>Sin votar:</dt>
+      <dd>{{ plenary.plenaria.sin_voto }}</dd>
+    </dl>
+    <canvas id="bar" class="chart chart-bar" chart-data="plenary.data" chart-labels="plenary.labels" chart-series="plenary.series"></canvas>
+  </div>
+</div>
+<div class="row clearfix" style="padding: 0 30px;">
+  <div class="col-xs-12 col-sm-4 col-md-3 voto clearfix" ng-repeat="voto in plenary.plenaria.votos" ng-class="{green: voto.voto == 'Sí', red: voto.voto == 'No', yellow: voto.voto == 'Abstención', brown: !voto.voto}">
+    <img ng-src="assets/images/partidos/{{voto.partido}}.png" alt="{{voto.partido}}"> <a ui-sref="deputy({id: voto.id})">{{ voto.nombre }}</a>
+  </div>
+</div>

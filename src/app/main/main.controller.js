@@ -16,9 +16,9 @@
       logo: 'leyes.png'
     },
     {
-      title: 'Votaciones',
-      url: 'votes',
-      description: 'Distribución de los votos por proyecto de ley',
+      title: 'Plenarias',
+      url: 'plenaries',
+      description: 'Distribución de los votos por plenaria a cada proyecto de ley',
       logo: 'group.png'
     },
     {

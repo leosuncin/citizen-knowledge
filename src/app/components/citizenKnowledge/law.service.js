@@ -34,6 +34,17 @@
         'estado': 'Publicación en el Diario Oficial y entrada en vigencia.',
         'resumen': 'TIENE POR OBJETO ESTABLECER LOS PROCEDIMIENTOS PARA DETERMINAR EL PATRIMONIO DE LOS SUJETOS OBLIGADOS, ASÍ COMO IMPONER SANCIONES ADMINISTRATIVAS POR EL INCUMPLIMIENTO DE LA MISMA. ( POR RESOLUCIÓN DE LA SALA DE LO CONSTITUCIONAL REF. 6-2016 SE SUSPENDE PROVISIONALMENTE SU ENTRADA EN VIGENCIA)',
         'documento': 'http://asamblea.gob.sv/eparlamento/indice-legislativo/buscador-de-documentos-legislativos/ley-de-probidad/archivo_documento_legislativo'
+      }, {
+        'id': 2,
+        'rama_derecho': 'Derecho Constitucional',
+        'materia': 'Salud Pública y Asistencia Social',
+        'sub_materia': 'Códigos',
+        'titulo': 'Ley de Deberes y Derechos de los Pacientes y Prestadores de Servicios de Salud.',
+        'tipo_documento': 'Ley',
+        'decreto': 307,
+        'fecha_emision': '2016-03-10T06:00:00.000Z',
+        'estado': 'Pendiente de publicación en el Diario Oficial y de entrada en vigencia.',
+        'resumen': 'LEY DE DEBERES Y DERECHOS DE LOS PACIENTES Y PRESTADORES DE SERVICIOS DE SALUD.'
       }
     ];
 
