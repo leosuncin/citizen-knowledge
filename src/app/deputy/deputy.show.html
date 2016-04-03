@@ -1,6 +1,7 @@
 <div class="row" style="padding: 0 30px;">
   <div class="col-xs-3">
     <img ng-src="{{ deputy.diputado.foto }}" alt="deputy.diputado.nombre_completo">
+    <img src="assets/images/ranking.png" alt="rating" width="160">
   </div>
   <dl class="dl-horizontal col-xs-9">
     <dt>Nombre completo:</dt>
@@ -13,16 +14,22 @@
     <dd><a ng-href="mailto:{{ deputy.diputado.correo }}">{{ deputy.diputado.correo }}</a></dd>
     <dt>Suplente</dt>
     <dd>{{ deputy.diputado.suplente }}</dd>
-    <dt>Comisiones</dt>
+    <dt>Comisiones legislativas:</dt>
     <dd>
         <ul>
           <li ng-repeat="comision in deputy.diputado.comisiones">{{ comision.nombre }} ({{ comision.cargo }})</li>
         </ul>
     </dd>
-    <dt>Trayectoria:</dt>
+    <dt>Trayectoria política:</dt>
     <dd>
         <ul>
-          <li ng-repeat="puesto in deputy.diputado.trayectoria">{{ puesto.cargo }} <br> {{ puesto.periodo }}</li>
+          <li ng-repeat="cargo_publico in deputy.diputado.trayectoria_politica">{{ cargo_publico.cargo }}<br>{{ cargo_publico.periodo }}<br ng-if="cargo_publico.puesto">{{ cargo_publico.puesto }}</li>
+        </ul>
+    </dd>
+    <dt>Trayectoria académica:</dt>
+    <dd>
+        <ul>
+          <li ng-repeat="carrera in deputy.diputado.trayectoria_academica">{{ carrera.carrera }}<br ng-if="carrera.institucion">{{ carrera.institucion }}<br ng-if="carrera.egresado">{{ carrera.egresado }}</li>
         </ul>
     </dd>
   </dl>

@@ -6,9 +6,13 @@
     .config(config);
 
   /** @ngInject */
-  function config($logProvider, toastrConfig) {
+  function config($logProvider, $locationProvider, toastrConfig) {
     // Enable log
     $logProvider.debugEnabled(true);
+
+    // Remove hashtag
+    $locationProvider.html5Mode(true);
+    $locationProvider.hashPrefix('!');
 
     // Set options third-party lib
     toastrConfig.allowHtml = true;
