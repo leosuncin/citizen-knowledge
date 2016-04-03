@@ -9,6 +9,90 @@
   function DeputyService($q) {
     var data = [
       {
+        'id': 1,
+        'nombre_completo': 'Norman Noel Quijano González',
+        'departamento': 'San Salvador',
+        'partido': 'ARENA',
+        'correo': 'norman.quijano@asamblea.gob.sv',
+        'suplente': 'Ricardo Humberto Contreras Henríquez',
+        'comisiones': [
+          {
+            'nombre': 'Comisión de Salud',
+            'cargo': 'Vocal'
+          },
+          {
+            'nombre': 'Comisión de Asuntos Municipales',
+            'cargo': 'Vocal'
+          }
+        ],
+        'trayectoria_politica': [
+          {
+            'cargo': 'Diputado Propietario a la Asamblea Legislativa por el departamento de San Salvador ',
+            'periodo': 'Mayo 2015 - Abril 2018'
+          }
+        ],
+        'foto': 'http://asamblea.gob.sv/pleno/pleno-legislativo/norman-noel-quijano-gonzalez/diputado_fotografia'
+      }, {
+        'id': 2
+      }, {
+        'id': 3,
+        'nombre_completo': 'René Alfredo Portillo Cuadra',
+        'departamento': 'San Salvador',
+        'partido': 'ARENA',
+        'correo': 'rene.portillo@asamblea.gob.sv',
+        'suplente': 'Rolando Alvarenga Argueta',
+        'comisiones': [
+          {
+            'nombre': 'Comisión de Legislación y Puntos Constitucionales',
+            'cargo': 'Vocal'
+          },
+          {
+            'nombre': 'Comisión de Reformas Electorales y Constitucionales',
+            'cargo': 'Vocal'
+          }
+        ],
+        'trayectoria_politica': [
+          {
+            'cargo': 'Diputado Propietario a la Asamblea Legislativa por el departamento de San Salvador',
+            'periodo': 'Mayo 2015 - Abril 2018'
+          }
+        ],
+        'foto': 'http://asamblea.gob.sv/pleno/pleno-legislativo/rene-alfredo-portillo-cuadra/diputado_fotografia'
+      }, {
+        'id': 4,
+        'nombre_completo': 'Margarita Escobar',
+        'departamento': 'San Salvador',
+        'partido': 'ARENA',
+        'correo': 'margarita.escobar@asamblea.gob.sv',
+        'suplente': 'José Ramón González Suvillaga',
+        'comisiones': [
+          {
+            'nombre': 'Comisión de Economía',
+            'cargo': 'Presidenta'
+          }
+        ],
+        'trayectoria_politica': [
+          {
+            'cargo': 'Diputada Propietaria a la Asamblea Legislativa por el departamento de San Salvador',
+            'periodo': 'Mayo 2015 - Abril 2018'
+          }, {
+            'cargo': 'Diputada Propietaria a la Asamblea Legislativa por el departamento de San Salvador',
+            'periodo': '2012 – 2015'
+          }, {
+            'cargo': 'Diputada Propietaria por Departamento de San Salvador',
+            'periodo': '2009 – 2012'
+          }, {
+            'cargo': 'Vice Canciller de El Salvador – Salvadoreños en el exterior'
+          }, {
+            'cargo': 'Embajadora, Representante permanente ante OEA'
+          }, {
+            'cargo': 'Embajadora Extraordinaria y Plenipotenciaria en Venezuela concurrente en Trinidad y Tobago y Guyana'
+          }, {
+            'cargo': 'Embajadora, Representante Adjunta ante las Naciones Unidas y los demás organismos internacionales en Ginebra, Suiza'
+          }
+        ],
+        'foto': 'http://asamblea.gob.sv/pleno/pleno-legislativo/margarita-escobar/diputado_fotografia'
+      }, {
         'id': 0,
         'nombre_completo': 'Ana Vilma Albanez de Escobar',
         'departamento': 'San Salvador',
@@ -36,9 +120,8 @@
           }
         ],
         foto: 'http://asamblea.gob.sv/pleno/pleno-legislativo/ana-vilma-albanez-de-escobar/diputado_fotografia'
-      },
-      {
-        'id': 1,
+      }, {
+        'id': 114,
         'nombre_completo': 'José Antonio Almendáriz Rivas',
         'departamento': 'Sonsonate',
         'partido': 'PCN',
@@ -115,7 +198,7 @@
     }
 
     function getDeputy(id) {
-      return $q.resolve(data[id]);
+      return $q.resolve(data[id - 1]);
     }
   }
 

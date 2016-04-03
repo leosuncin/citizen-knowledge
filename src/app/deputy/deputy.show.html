@@ -26,7 +26,7 @@
           <li ng-repeat="cargo_publico in deputy.diputado.trayectoria_politica">{{ cargo_publico.cargo }}<br>{{ cargo_publico.periodo }}<br ng-if="cargo_publico.puesto">{{ cargo_publico.puesto }}</li>
         </ul>
     </dd>
-    <dt>Trayectoria académica:</dt>
+    <dt ng-if="deputy.diputado.trayectoria_academica">Trayectoria académica:</dt>
     <dd>
         <ul>
           <li ng-repeat="carrera in deputy.diputado.trayectoria_academica">{{ carrera.carrera }}<br ng-if="carrera.institucion">{{ carrera.institucion }}<br ng-if="carrera.egresado">{{ carrera.egresado }}</li>

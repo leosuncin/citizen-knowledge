@@ -3,15 +3,15 @@
   <thead>
     <tr>
       <th class="col-xs-8">Nombre completo</th>
-      <th class="col-xs-2">departamento</th>
-      <th class="col-xs-2">partido</th>
+      <th class="col-xs-2">Departamento</th>
+      <th class="col-xs-2">Partido</th>
     </tr>
   </thead>
   <tbody>
     <tr ng-repeat="diputado in deputies.diputados">
       <td class="col-xs-8"><a ui-sref="deputy({id: diputado.id})">{{ diputado.nombre_completo }}</a></td>
       <td class="col-xs-2"><a ui-sref="deputy({id: diputado.id})">{{ diputado.departamento }}</a></td>
-      <td class="col-xs-2"><a ui-sref="deputy({id: diputado.id})">{{ diputado.partido }}</a></td>
+      <td class="col-xs-2"><a ui-sref="deputy({id: diputado.id})"><img ng-src="assets/images/partidos/{{ diputado.partido }}.png"> {{ diputado.partido }}</a></td>
     </tr>
   </tbody>
 </table>
